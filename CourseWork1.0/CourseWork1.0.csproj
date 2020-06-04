@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{406E32D9-461F-47E3-9ACA-ED37D9A36BFE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CourseWork1._0</RootNamespace>
+    <AssemblyName>CourseWork1.0</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.12.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.12.1\lib\net45\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddArtistForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddArtistForm.Designer.cs">
+      <DependentUpon>AddArtistForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAuctionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAuctionForm.Designer.cs">
+      <DependentUpon>AddAuctionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCollectionerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCollectionerForm.Designer.cs">
+      <DependentUpon>AddCollectionerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCommissionShopForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCommissionShopForm.Designer.cs">
+      <DependentUpon>AddCommissionShopForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMuseumForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMuseumForm.Designer.cs">
+      <DependentUpon>AddMuseumForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddOwnCollectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOwnCollectionForm.Designer.cs">
+      <DependentUpon>AddOwnCollectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPictureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPictureForm.Designer.cs">
+      <DependentUpon>AddPictureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Art.cs" />
+    <Compile Include="ArtistForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArtistForm.Designer.cs">
+      <DependentUpon>ArtistForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Artist.cs" />
+    <Compile Include="Auction.cs" />
+    <Compile Include="AuctionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuctionForm.Designer.cs">
+      <DependentUpon>AuctionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Collectioner.cs" />
+    <Compile Include="CollectionersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CollectionersForm.Designer.cs">
+      <DependentUpon>CollectionersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommissionShop.cs" />
+    <Compile Include="CommissionShopForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommissionShopForm.Designer.cs">
+      <DependentUpon>CommissionShopForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dao.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Museum.cs" />
+    <Compile Include="MuseumsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MuseumsForm.Designer.cs">
+      <DependentUpon>MuseumsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnCollection.cs" />
+    <Compile Include="OwnCollectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnCollectionForm.Designer.cs">
+      <DependentUpon>OwnCollectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Picture.cs" />
+    <Compile Include="PicturesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PicturesForm.Designer.cs">
+      <DependentUpon>PicturesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddArtistForm.resx">
+      <DependentUpon>AddArtistForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAuctionForm.resx">
+      <DependentUpon>AddAuctionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCollectionerForm.resx">
+      <DependentUpon>AddCollectionerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCommissionShopForm.resx">
+      <DependentUpon>AddCommissionShopForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMuseumForm.resx">
+      <DependentUpon>AddMuseumForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddOwnCollectionForm.resx">
+      <DependentUpon>AddOwnCollectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPictureForm.resx">
+      <DependentUpon>AddPictureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArtistForm.resx">
+      <DependentUpon>ArtistForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuctionForm.resx">
+      <DependentUpon>AuctionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionersForm.resx">
+      <DependentUpon>CollectionersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommissionShopForm.resx">
+      <DependentUpon>CommissionShopForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MuseumsForm.resx">
+      <DependentUpon>MuseumsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnCollectionForm.resx">
+      <DependentUpon>OwnCollectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PicturesForm.resx">
+      <DependentUpon>PicturesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Art.datasource" />
+    <None Include="Properties\DataSources\Artist.datasource" />
+    <None Include="Properties\DataSources\ArtistForm.datasource" />
+    <None Include="Properties\DataSources\Artists.datasource" />
+    <None Include="Properties\DataSources\Auction.datasource" />
+    <None Include="Properties\DataSources\Collectioner.datasource" />
+    <None Include="Properties\DataSources\CommissionShop.datasource" />
+    <None Include="Properties\DataSources\Museum.datasource" />
+    <None Include="Properties\DataSources\OwnCollection.datasource" />
+    <None Include="Properties\DataSources\Picture.datasource" />
+    <None Include="Properties\DataSources\Pictures.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
